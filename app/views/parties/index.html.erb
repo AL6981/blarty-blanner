@@ -1,0 +1,7 @@
+<h3><%= 'Blarty Blanner' %></h3>
+
+<% @parties.each do |party| %>
+  <%= link_to party.name, party_path(party) %><br />
+<% end %>
+<br /><br />
+<%= link_to 'Create New Blarty', new_party_path %>
